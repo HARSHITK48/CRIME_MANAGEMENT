@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PUBLIC_LOGIN" />
+        <activity android:name=".POLICE_LOGIN"></activity>
     </application>
 
 </manifest>
