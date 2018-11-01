@@ -20,7 +20,12 @@
         <activity android:name=".PublicActivity" />
         <activity android:name=".MostWantedActivity" />
         <activity android:name=".PoliceActivity" />
-        <activity android:name=".ViewTipsActivity"></activity>
+        <activity android:name=".ViewTipsActivity" />
+        <activity android:name=".ViewComplaintActivity" />
+        <activity android:name=".NewComplaintActivity" />
+        <activity android:name=".ShowComplaintActivity">
+
+        </activity>
     </application>
 
 </manifest>

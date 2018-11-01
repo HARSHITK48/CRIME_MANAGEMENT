@@ -5,13 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".PoliceActivity">
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/activity_police_read_tips_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextLight"
+        android:drawableLeft="@drawable/ic_priority_high_black_24dp"
         android:layout_margin="8dp"
         android:text="Read Anonymous Tips" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/activity_police_read_complaints_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:drawableLeft="@drawable/ic_library_books_black_24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/colorTextLight"
+        android:text="read COMPLAINTS"/>
 
 </LinearLayout>

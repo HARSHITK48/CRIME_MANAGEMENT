@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewComplaintActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/activity_new_complaint_camera_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/activity_new_complaint_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/activity_new_complaint_capture_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#0984e3"
+
+            app:layout_constraintBottom_toBottomOf="@id/activity_new_complaint_camera_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_camera_black_24dp"
+                android:gravity="center"
+                android:tint="#fff"
+                android:textColor="#fff" />
+
+        </android.support.v7.widget.CardView>
+
+        <EditText
+            android:id="@+id/activity_new_complaint_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:layout_marginRight="12dp"
+            android:hint="Criminal Name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/activity_new_complaint_complaint_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:hint="Enter Complaint"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

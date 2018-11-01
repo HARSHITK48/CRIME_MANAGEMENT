@@ -26,4 +26,12 @@
         android:layout_height="wrap_content"
         android:text="Anonymous Tip" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/activity_public_scan_face_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Face"
+        android:textColor="#fff"
+        app:backgroundTint="#0984e3" />
+
 </LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "140520424006",
+    "firebase_url": "https://cfms-2fad5.firebaseio.com",
+    "project_id": "cfms-2fad5",
+    "storage_bucket": "cfms-2fad5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140520424006:android:2152cf1db64fcb5b",
+        "android_client_info": {
+          "package_name": "com.example.apple.crime_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140520424006-kce3ogekhn7n92cql9oqu79tp2l08r57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyConWP-0Nn0usDK112nJ4vO8fGTqUbBD_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
