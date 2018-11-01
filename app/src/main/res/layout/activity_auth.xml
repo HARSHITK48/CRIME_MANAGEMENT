@@ -4,21 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_action_name"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".AuthActivity">
 
-    <android.support.v7.widget.AppCompatButton
-        app:backgroundTint="@color/colorPrimaryDark"
-        android:id="@+id/activity_auth_police_login_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorTextLight"
-        android:text="Police Login" />
 
-    <Button
-        android:id="@+id/activity_auth_public_login_button"
-        android:layout_width="match_parent"
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Public Login" />
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_auth_police_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorTextLight"
+            android:text="Police Login"
+            android:textColor="@color/colorTextLight"
+            app:backgroundTint="@color/colorPrimaryDark" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/activity_auth_public_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_group_black_24dp"
+            android:drawableTint="@color/colorTextLight"
+            android:text="Public Login"
+            android:textColor="@color/colorTextLight" />
+    </LinearLayout>
 
 </LinearLayout>
