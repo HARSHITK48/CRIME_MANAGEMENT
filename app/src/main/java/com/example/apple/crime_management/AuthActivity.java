@@ -54,7 +54,7 @@ public class AuthActivity extends AppCompatActivity
             }
         });
         
-      // generateTips();
+       generateTips();
     }
     
     //method to generate tips
