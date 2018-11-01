@@ -9,6 +9,17 @@ public class ComplaintObject extends RealmObject
     private int personId;
     private String personName;
     private String complaint;
+    private String aadhar;
+
+    public String getAadhar()
+    {
+        return aadhar;
+    }
+
+    public void setAadhar(String aadhar)
+    {
+        this.aadhar = aadhar;
+    }
 
     public String getId()
     {

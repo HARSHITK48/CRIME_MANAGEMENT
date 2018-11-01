@@ -42,6 +42,8 @@ public class NewComplaintActivity extends AppCompatActivity
     EditText nameEditText;
     @BindView(R.id.activity_new_complaint_complaint_edit_text)
     EditText complaintEditText;
+    @BindView (R.id.activity_new_complaint_aadhar_complaint_edit_text)
+    EditText aadharEditText;
 
     Realm realm = Realm.getDefaultInstance ( );
 
@@ -111,6 +113,7 @@ public class NewComplaintActivity extends AppCompatActivity
                                     newComplaint.setId (UUID.randomUUID ( ).toString ( ));
                                     newComplaint.setPersonName (nameEditText.getText ( ).toString ( ));
                                     newComplaint.setPersonId (face.getTrackingId ( ));
+                                    newComplaint.setAadhar (aadharEditText.getText ().toString ());
                                     newComplaint.setComplaint (complaintEditText.getText ( ).toString ( ));
                                     realm.commitTransaction ( );
                                 }
