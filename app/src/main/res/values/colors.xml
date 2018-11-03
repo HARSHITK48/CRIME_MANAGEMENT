@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#34495e</color>
     <color name="colorPrimaryDark">#2c3e50</color>
-    <color name="colorAccent">#e74c3c</color>
+    <color name="colorAccent">#f5b355</color>
     <color name="kaiwalya">#8a8ea6</color>
 
     <color name="colorTextLight">#fff</color>

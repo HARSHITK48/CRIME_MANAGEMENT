@@ -86,7 +86,7 @@ public class ViewTipsActivity extends AppCompatActivity
         @Override
         public TipViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i)
         {
-            View view = LayoutInflater.from (ViewTipsActivity.this).inflate (R.layout.view_holder_tip, viewGroup, false);
+            View view = LayoutInflater.from (ViewTipsActivity.this).inflate (R.layout.view_holder_tip, viewGroup,false);
             return new TipViewHolder (view);
         }
 

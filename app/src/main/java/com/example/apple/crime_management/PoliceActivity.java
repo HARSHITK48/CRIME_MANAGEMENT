@@ -13,6 +13,8 @@ public class PoliceActivity extends AppCompatActivity
 {
     @BindView(R.id.activity_police_read_tips_button)
     Button readTipsButton;
+    @BindView(R.id.activity_police_read_complaints_button)
+    Button readComplaintButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,7 +35,20 @@ public class PoliceActivity extends AppCompatActivity
             {
                 Intent readTipsIntent = new Intent (PoliceActivity.this, ViewTipsActivity.class);
                 startActivity (readTipsIntent);
+
+            }
+        });
+
+        readComplaintButton.setOnClickListener (new View.OnClickListener ( )
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent readTipsIntent = new Intent (PoliceActivity.this, ViewTipsActivity.class);
+                startActivity (readTipsIntent);
             }
         });
     }
 }
+
+

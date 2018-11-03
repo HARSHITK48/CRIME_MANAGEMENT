@@ -32,8 +32,8 @@ public class PublicActivity extends AppCompatActivity
     Button fileComplaintButton;
     @BindView(R.id.activity_public_tip_button)
     Button tipButton;
-    @BindView(R.id.activity_public_scan_face_button)
-    Button scanFaceButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,6 +46,16 @@ public class PublicActivity extends AppCompatActivity
 
     private void setup()
     {
+        //most wanted button
+        mostWantedButton.setOnClickListener (new View.OnClickListener ( )
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent=new Intent (PublicActivity.this,MostWantedActivity.class);
+                startActivity (intent);
+            }
+        });
         //setup complaint button
         fileComplaintButton.setOnClickListener (new View.OnClickListener ( )
         {

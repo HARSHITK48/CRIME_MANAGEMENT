@@ -5,7 +5,7 @@ import io.realm.RealmObject;
 public class MostWantedObject extends RealmObject
 {
     private String name;
-    private int dangerLevel;
+    private int position;
 
     public String getName()
     {
@@ -17,13 +17,13 @@ public class MostWantedObject extends RealmObject
         this.name = name;
     }
 
-    public int getDangerLevel()
+    public int getPosition()
     {
-        return dangerLevel;
+        return position;
     }
 
-    public void setDangerLevel(int dangerLevel)
+    public void setPosition(int position)
     {
-        this.dangerLevel = dangerLevel;
+        this.position = position;
     }
 }

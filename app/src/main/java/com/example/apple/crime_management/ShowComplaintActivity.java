@@ -16,6 +16,8 @@ public class ShowComplaintActivity extends AppCompatActivity
     TextView nameTextView;
     @BindView(R.id.activity_show_complaint_text_view)
     TextView complaintTextView;
+    @BindView (R.id.activity_show_aadhar_text_view)
+    TextView aadharTextView;
 
     ComplaintObject complaintObject;
     Realm realm = Realm.getDefaultInstance ( );
@@ -36,5 +38,6 @@ public class ShowComplaintActivity extends AppCompatActivity
         complaintObject = realm.where (ComplaintObject.class).equalTo ("id", id).findFirst ( );
         nameTextView.setText (complaintObject.getPersonName ( ));
         complaintTextView.setText (complaintObject.getComplaint ( ));
+        aadharTextView.setText (complaintObject.getAadhar ());
     }
 }
